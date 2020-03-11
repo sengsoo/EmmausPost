@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emmaus Post - Welcome</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <h1>Emmaus Post</h1>
+    <img src="postbox.png" alt="우체통" width="640" height="480">
+    <p><textarea cols="50" rows="10" placeholder="내용을 입력하세요."></textarea></p>
+    <button onclick="sendEvent()">Send</button>
+  </div>
+
+  <script>
+    function sendEvent()
+    {
+      window.open('SendMessage.html','Send',
+      'width=430,height=500,location=no,status=no,scrollbars=yes');
+    }
+  </script>
+</body>
+</html>
