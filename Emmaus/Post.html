@@ -9,16 +9,12 @@
   <div>
     <h1>Emmaus Post</h1>
     <img src="postbox.png" alt="우체통" width="640" height="480">
-    <p><textarea cols="50" rows="10" placeholder="내용을 입력하세요."></textarea></p>
-    <button onclick="sendEvent()">Send</button>
+    <form action="https://sengsoo.github.io/EmmausPost_Admin/Emmaus-admin/Admin.html" method="post">
+      <p><textarea cols="50" rows="10" placeholder="내용을 입력하세요." name="sendMessage"></textarea></p>
+      <p><input type="submit" value="Send" onclick="alert('메세지가 전해졌습니다. 소중한 의견 감사합니다!')"></p>
+    </form>
+    <!--<button onclick="alert('메세지가 전해졌습니다. 소중한 의견 감사합니다!')">Send</button>-->
   </div>
 
-  <script>
-    function sendEvent()
-    {
-      window.open('SendMessage.html','Send',
-      'width=430,height=500,location=no,status=no,scrollbars=yes');
-    }
-  </script>
 </body>
 </html>
